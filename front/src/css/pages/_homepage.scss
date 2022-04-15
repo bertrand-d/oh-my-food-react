@@ -1,5 +1,16 @@
 #homepage {
     .section-discover {
+        display: flex;
+        flex-direction: column;
         background: $medium-grey;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0;
+
+        .button {
+            width: 250px;
+            margin-top: 20px;
+        }
     }
 }
