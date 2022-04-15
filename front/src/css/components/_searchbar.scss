@@ -1,0 +1,25 @@
+.searchbar-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: $dark-grey;
+
+    .input-container {
+        .icon {
+            position: absolute;
+            height: 20px;
+        }
+        
+        .searchbar{
+            background: none;
+            border: none;
+            font-weight: 600;
+            text-align: center;
+    
+            &:focus {
+                outline: none;
+            }
+    
+        }
+    }
+}
