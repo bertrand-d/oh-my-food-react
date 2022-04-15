@@ -7,7 +7,8 @@
 //3. Base
 @import 
     './base/base',
-    './base/colors';
+    './base/colors',
+    './base/typography';
 
 //4. Layout-related sections
 @import 
@@ -19,5 +20,8 @@
     './components/searchbar';
 
 //6. Page-specific styles
+@import 
+    './pages/homepage';
+
 
 //7. Themes
