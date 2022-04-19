@@ -1,0 +1,58 @@
+.card-restaurant {
+    cursor: pointer;
+    position: relative;
+    border-radius: 15px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: $soft-shadow;
+    transition: all ease-in-out 0.2s;
+
+    &:hover {
+        box-shadow: $dark-shadow;
+    }
+
+    .top {
+        max-height: 200px;
+        overflow: hidden;
+
+        .img-restaurant {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .new {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: $tertiary;
+            color: darken($tertiary, 50%);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    }
+
+    .bottom {
+        background: #fff;
+        padding: 20px;
+        display: flex;
+
+        .informations {
+            .restaurant-name{
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+        }
+
+        .fav-icon {
+            cursor: pointer;
+            margin-left: auto;
+            height: 20px;
+            transition: all ease-in-out 0.2s;
+
+            &:hover {
+                filter: invert(35%) sepia(47%) saturate(980%) hue-rotate(235deg) brightness(96%) 
+            }
+        }
+    }
+}
