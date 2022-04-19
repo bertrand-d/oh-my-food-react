@@ -13,4 +13,21 @@
             margin-top: 20px;
         }
     }
+
+    .section-fonctionment {
+        padding: 40px;
+
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            gap: 20px 40px;
+
+            .button-function {
+                flex-grow: 1;
+                flex-basis: 0;
+                min-width: 250px;
+            }
+        }
+    }
 }

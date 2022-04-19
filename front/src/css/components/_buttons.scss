@@ -4,12 +4,68 @@
     color: #fff;
     border-radius: 50px;
     padding: 20px;
-    box-shadow: $soft-shadow;
+    box-shadow: $dark-shadow;
     cursor: pointer;
     transition: all ease-in-out 0.2s;
     font-size: 0.9rem;
 
     &:hover {
         opacity: 0.8;
+    }
+}
+
+.button-function {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: $medium-grey;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: $dark-shadow;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+    font-weight: 600;
+    text-align: left;
+
+    &:hover {
+        background: lighten($primary, 20%);
+    }
+
+    .number {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        top: 50%;
+        left: -12.5px;
+        transform: translateY(-50%);
+        color: #fff;
+        background: $secondary;
+    }
+
+    .icon {
+        display: block;
+        margin: 0 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        filter: invert(47%) sepia(7%) saturate(23%) hue-rotate(325deg) brightness(105%);
+
+        &.phone{
+            background-image: url('../../images/smartphone.png');
+        }
+
+        &.list{
+            background-image: url('../../images/list.png');
+        }
+
+        &.store{
+            background-image: url('../../images/store.png');
+        }
     }
 }
