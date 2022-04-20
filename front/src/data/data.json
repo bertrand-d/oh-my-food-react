@@ -4,7 +4,7 @@
         {
             "name": "La palette du goût",
             "place" : "Ménilmontant",
-            "picture": "url",
+            "picture": "la_palette_du_gout.jpg",
             "recipes": [
                 {
                     "starters": [
@@ -64,7 +64,7 @@
         {
             "name": "La note enchantée",
             "place" : "Charonne",
-            "picture": "url",
+            "picture": "la_note_enchantee.jpg",
             "recipes": [
                 {
                     "starters": [
@@ -124,7 +124,7 @@
         {
             "name": "A la française",
             "place" : "Cité rouge",
-            "picture": "url",
+            "picture": "a_la_francaise.jpg",
             "recipes": [
                 {
                     "starters": [
@@ -184,7 +184,7 @@
         {
             "name": "Le délice des sens",
             "place" : "Folie-Mélicourt",
-            "picture": "url",
+            "picture": "le_delice_des_sens.jpg",
             "recipes": [
                 {
                     "starters": [

@@ -1,9 +1,14 @@
+import {useSelector} from 'react-redux'
+
 import Searchbar from "../components/Searchbar";
+import CardRestaurant from "../components/CardRestaurant";
 
 function Homepage() {
+    const restaurant = useSelector(state => state.restaurant)
+
     return (
       <div id="homepage">
-        <Searchbar></Searchbar>
+        <Searchbar/>
         <section className="section-discover">
             <h1 className="main-title">Réservez le menu qui vous convient</h1>
             <p>Découvrez de nouveaux restaurants d'exception, sélectionnés par nos soins</p>
@@ -33,56 +38,12 @@ function Homepage() {
             <div className="section-content">
                 <h2 className="second-title">Restaurants</h2>
                 <div className="cards-container">
-                    <div className="card-restaurant">
-                        <div className="top">
-                            <img src={process.env.PUBLIC_URL + '/restaurants/la_palette_du_gout.jpg'} className="img-restaurant" alt="restaurant"></img>
-                            <span className="new">Nouveau</span>
-                        </div>
-                        <div className="bottom">
-                            <div className="informations">
-                                <p className="restaurant-name">La palette du goût</p>
-                                <p className="restaurant-place">Ménilmontant</p>
-                            </div>
-                            <img src={process.env.PUBLIC_URL + '/heart.png'} className="fav-icon" alt="fav-icon"></img>       
-                        </div>    
-                    </div>
-                    <div className="card-restaurant">
-                        <div className="top">
-                            <img src={process.env.PUBLIC_URL + '/restaurants/la_note_enchantee.jpg'} className="img-restaurant" alt="restaurant"></img>
-                            <span className="new">Nouveau</span>
-                        </div>
-                        <div className="bottom">
-                            <div className="informations">
-                                <p className="restaurant-name">La note enchantée</p>
-                                <p className="restaurant-place">Charonne</p>
-                            </div>
-                            <img src={process.env.PUBLIC_URL + '/heart.png'} className="fav-icon" alt="fav-icon"></img>       
-                        </div>    
-                    </div>
-                    <div className="card-restaurant">
-                        <div className="top">
-                            <img src={process.env.PUBLIC_URL + '/restaurants/a_la_francaise.jpg'} className="img-restaurant" alt="restaurant"></img>
-                        </div>
-                        <div className="bottom">
-                            <div className="informations">
-                                <p className="restaurant-name">A la française</p>
-                                <p className="restaurant-place">Cité rouge</p>
-                            </div>
-                            <img src={process.env.PUBLIC_URL + '/heart.png'} className="fav-icon" alt="fav-icon"></img>       
-                        </div>    
-                    </div>
-                    <div className="card-restaurant">
-                        <div className="top">
-                            <img src={process.env.PUBLIC_URL + '/restaurants/le_delice_des_sens.jpg'} className="img-restaurant" alt="restaurant"></img>
-                        </div>
-                        <div className="bottom">
-                            <div className="informations">
-                                <p className="restaurant-name">Le délice des sens</p>
-                                <p className="restaurant-place">Folie-Mélicourt</p>
-                            </div>
-                            <img src={process.env.PUBLIC_URL + '/heart.png'} className="fav-icon" alt="fav-icon"></img>       
-                        </div>    
-                    </div>
+                    {
+                        restaurant.map((restaurant, index) => {
+                            console.log(restaurant.picture)
+                            return <CardRestaurant key={index} picture={restaurant.picture} name={restaurant.name} place={restaurant.place} />
+                        })
+                    }
                 </div>
             </div>
         </section>
