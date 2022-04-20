@@ -1,8 +1,6 @@
-import { Link } from 'react-router-dom'
-
-function CardRestaurant(props) {
+function RestaurantPage(props) {
     return (
-        <Link to= {"/restaurant/" + props.id} className="card-restaurant">
+        <div className="card-restaurant">
             <div className="top">
                 <img src={process.env.PUBLIC_URL + "restaurants/" + props.picture } className="img-restaurant" alt="restaurant"></img>
                 <span className="new">Nouveau</span>
@@ -14,8 +12,8 @@ function CardRestaurant(props) {
                 </div>
                 <img src={process.env.PUBLIC_URL + '/heart.png'} className="fav-icon" alt="fav-icon"></img>       
             </div> 
-        </Link>   
+        </div>   
     );
 }
 
-export default CardRestaurant;
+export default RestaurantPage;

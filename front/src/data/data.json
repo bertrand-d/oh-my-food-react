@@ -1,7 +1,8 @@
 {
     "restaurants": 
     [
-        {
+        {   
+            "id": "0",
             "name": "La palette du goût",
             "place" : "Ménilmontant",
             "picture": "la_palette_du_gout.jpg",
@@ -62,6 +63,7 @@
             ]
         },
         {
+            "id": "1",
             "name": "La note enchantée",
             "place" : "Charonne",
             "picture": "la_note_enchantee.jpg",
@@ -122,6 +124,7 @@
             ]
         },
         {
+            "id": "2",
             "name": "A la française",
             "place" : "Cité rouge",
             "picture": "a_la_francaise.jpg",
@@ -182,6 +185,7 @@
             ]
         },
         {
+            "id": "3",
             "name": "Le délice des sens",
             "place" : "Folie-Mélicourt",
             "picture": "le_delice_des_sens.jpg",

@@ -40,8 +40,7 @@ function Homepage() {
                 <div className="cards-container">
                     {
                         restaurant.map((restaurant, index) => {
-                            console.log(restaurant.picture)
-                            return <CardRestaurant key={index} picture={restaurant.picture} name={restaurant.name} place={restaurant.place} />
+                            return <CardRestaurant key={index} id={restaurant.id} picture={restaurant.picture} name={restaurant.name} place={restaurant.place} />
                         })
                     }
                 </div>
