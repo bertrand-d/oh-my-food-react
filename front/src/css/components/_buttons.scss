@@ -26,9 +26,11 @@
     transition: all ease-in-out 0.2s;
     font-weight: 600;
     text-align: left;
+    box-shadow: $soft-shadow;
 
     &:hover {
         background: lighten($primary, 20%);
+        box-shadow: $dark-shadow;
     }
 
     .number {
