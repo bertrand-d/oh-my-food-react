@@ -1,7 +1,9 @@
 function RestaurantPage() {
     return (
         <div id="restaurant-page">
-            <img src={"/restaurants/la_note_enchantee.jpg" } className="img-cover" alt="restaurant"></img>
+            <div className="img-cover">
+                <img src={"/restaurants/la_note_enchantee.jpg" } alt="restaurant"></img>
+            </div>
             <section className="menu">
                 <h2 className="main-subtitle-script">La palette du goût</h2>
                 <div className="menu-container">
