@@ -19,12 +19,15 @@
 
         &-container {
             display: flex;
-            gap: 10px;
+            gap: 15px;
             justify-content: space-between;
             margin: 40px 0;
 
             .menu-column {
                 flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
 
                 .category-title {
                     margin-bottom: 20px;
