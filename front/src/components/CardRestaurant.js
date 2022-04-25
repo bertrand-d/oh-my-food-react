@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function CardRestaurant(props) {
     return (
-        <Link to= {"/restaurant/" + props.id} className="card-restaurant">
+        <Link to= {"restaurant/" + props.id} className="card-restaurant">
             <div className="top">
                 <img src={"restaurants/" + props.picture } className="img-restaurant" alt="restaurant"></img>
                 {
