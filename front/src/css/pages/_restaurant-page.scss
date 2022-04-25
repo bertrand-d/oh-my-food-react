@@ -18,8 +18,18 @@
         }
 
         &-container {
-            margin: 40px 0;
             display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            margin: 40px 0;
+
+            .menu-column {
+                flex-grow: 1;
+
+                .category-title {
+                    margin-bottom: 20px;
+                }
+            }
         }
     }
 }

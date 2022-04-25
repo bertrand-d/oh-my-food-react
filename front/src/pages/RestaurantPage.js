@@ -10,12 +10,42 @@ function RestaurantPage() {
                     <div className="menu-container">
                         <div className="menu-column">
                             <h3 className="category-title">Entrées</h3>
+                            <div className="card-dish">
+                                <div className="informations-dish">
+                                    <p className="name-dish">Nom du plat</p>
+                                    <p className="description-dish">Description du plat</p>
+                                </div>
+                                <p className="price-dish">20€</p>
+                                <span className="check-dish">
+                                    <img src={'/checked.png'} className="dish-icon" alt="fav-icon"></img>
+                                </span>
+                            </div>
                         </div>
                         <div className="menu-column">
                             <h3 className="category-title">Plats</h3>
+                            <div className="card-dish">
+                                <div className="informations-dish">
+                                    <p className="name-dish">Nom du plat</p>
+                                    <p className="description-dish">Description du plat</p>
+                                </div>
+                                <p className="price-dish">20€</p>
+                                <span className="check-dish">
+                                    <img src={'/checked.png'} className="dish-icon" alt="fav-icon"></img>
+                                </span>
+                            </div>
                         </div>
                         <div className="menu-column">
                             <h3 className="category-title">Desserts</h3>
+                            <div className="card-dish">
+                                <div className="informations-dish">
+                                    <p className="name-dish">Nom du plat</p>
+                                    <p className="description-dish">Description du plat</p>
+                                </div>
+                                <p className="price-dish">20€</p>
+                                <span className="check-dish">
+                                    <img src={'/checked.png'} className="dish-icon" alt="fav-icon"></img>
+                                </span>
+                            </div>
                         </div>
                     </div>    
                 </div>     

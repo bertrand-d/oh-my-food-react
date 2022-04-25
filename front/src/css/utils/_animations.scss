@@ -6,3 +6,21 @@
         transform: scale(1);
     }
 }
+
+@keyframes width-to-large {
+    from {
+        margin-right: -120px;
+    }
+    to {
+        margin-right: -20px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}

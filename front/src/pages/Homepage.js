@@ -40,7 +40,7 @@ function Homepage() {
                 <div className="cards-container">
                     {
                         restaurant.map((restaurant, index) => {
-                            return <CardRestaurant key={index} id={restaurant.id} new={restaurant.isNew} picture={restaurant.picture} name={restaurant.name} place={restaurant.place} />
+                            return <CardRestaurant key={index} id={"&id=" + restaurant.id} new={restaurant.isNew} picture={restaurant.picture} name={restaurant.name} place={restaurant.place} />
                         })
                     }
                 </div>
