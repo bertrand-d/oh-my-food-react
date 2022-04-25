@@ -19,5 +19,21 @@ p {
 }
 
 .second-title {
-    font-size: 1.3rem;;
+    font-size: 1.3rem;
+
+    &.script {
+        font-family: $font-family-serif;
+    }
+}
+
+.category-title {
+    font-weight: 300;
+    text-transform: uppercase;
+
+    &:after {
+        content:"";
+        display:block;
+        border-bottom: 2px solid $tertiary;
+        width: 40px;
+    }
 }

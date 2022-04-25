@@ -8,4 +8,18 @@
             @extend .img-size;
         }
     }
+
+    .menu {
+        background: $medium-grey;
+
+        &-content {
+            @extend .max-container;
+            padding: 40px 0;
+        }
+
+        &-container {
+            margin: 40px 0;
+            display: flex;
+        }
+    }
 }
