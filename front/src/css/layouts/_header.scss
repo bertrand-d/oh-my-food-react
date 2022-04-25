@@ -3,6 +3,8 @@
     padding: 20px 0;
     justify-content: center;
     box-shadow: $net-shadow;
+    position: relative;
+    z-index: 1;
 
     .logo {
         width: 200px;

@@ -3,6 +3,7 @@
     [
         {   
             "id": "0",
+            "isNew" : true,
             "name": "La palette du goût",
             "place" : "Ménilmontant",
             "picture": "la_palette_du_gout.jpg",
@@ -64,6 +65,7 @@
         },
         {
             "id": "1",
+            "isNew" : true,
             "name": "La note enchantée",
             "place" : "Charonne",
             "picture": "la_note_enchantee.jpg",
@@ -125,6 +127,7 @@
         },
         {
             "id": "2",
+            "isNew" : false,
             "name": "A la française",
             "place" : "Cité rouge",
             "picture": "a_la_francaise.jpg",
@@ -186,6 +189,7 @@
         },
         {
             "id": "3",
+            "isNew" : false,
             "name": "Le délice des sens",
             "place" : "Folie-Mélicourt",
             "picture": "le_delice_des_sens.jpg",

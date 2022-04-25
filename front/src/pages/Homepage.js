@@ -5,7 +5,7 @@ import CardRestaurant from "../components/CardRestaurant";
 
 function Homepage() {
     const restaurant = useSelector(state => state.restaurant)
-
+    
     return (
       <div id="homepage">
         <Searchbar/>
@@ -40,7 +40,7 @@ function Homepage() {
                 <div className="cards-container">
                     {
                         restaurant.map((restaurant, index) => {
-                            return <CardRestaurant key={index} id={restaurant.id} picture={restaurant.picture} name={restaurant.name} place={restaurant.place} />
+                            return <CardRestaurant key={index} id={restaurant.id} new={restaurant.isNew} picture={restaurant.picture} name={restaurant.name} place={restaurant.place} />
                         })
                     }
                 </div>

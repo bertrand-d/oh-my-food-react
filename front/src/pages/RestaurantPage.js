@@ -1,18 +1,23 @@
-function RestaurantPage(props) {
+function RestaurantPage() {
     return (
-        <div className="card-restaurant">
-            <div className="top">
-                <img src={process.env.PUBLIC_URL + "restaurants/" + props.picture } className="img-restaurant" alt="restaurant"></img>
-                <span className="new">Nouveau</span>
-            </div>
-            <div className="bottom">
-                <div className="informations">
-                    <p className="restaurant-name">{props.name}</p>
-                    <p className="restaurant-place">{props.place}</p>
+        <div id="restaurant-page">
+            <img src={"/restaurants/la_note_enchantee.jpg" } className="img-cover" alt="restaurant"></img>
+            <section className="menu">
+                <h2 className="main-subtitle-script">La palette du goût</h2>
+                <div className="menu-container">
+                    <div className="menu-column">
+                        <h3 className="starters">Entrées</h3>
+                    </div>
+                    <div className="menu-column">
+                        <h3 className="dishes">Plats</h3>
+                    </div>
+                    <div className="menu-column">
+                        <h3 className="desserts">Desserts</h3>
+                    </div>
                 </div>
-                <img src={process.env.PUBLIC_URL + '/heart.png'} className="fav-icon" alt="fav-icon"></img>       
-            </div> 
-        </div>   
+                
+            </section>
+        </div>
     );
 }
 
