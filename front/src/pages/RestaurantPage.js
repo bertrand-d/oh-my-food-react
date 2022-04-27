@@ -52,8 +52,10 @@ function RestaurantPage() {
                                 })
                             }
                         </div>
-                    </div>    
-                </div>     
+                    </div>  
+                    <a className="button" href="#">Commander</a>  
+                </div>   
+
             </section>
         </div>
     );

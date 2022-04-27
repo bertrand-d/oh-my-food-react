@@ -14,25 +14,39 @@
 
         &-content {
             @extend .max-container;
-            padding: 40px 0;
+            padding: 40px;
         }
 
         &-container {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr;
             gap: 15px;
             justify-content: space-between;
             margin: 40px 0;
+
+            @include breakpoint(md) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
 
             .menu-column {
                 flex-grow: 1;
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
+                margin-bottom: 20px;
+
+                @include breakpoint(md) {
+                    margin-bottom: 0;
+                }
 
                 .category-title {
                     margin-bottom: 20px;
                 }
-            }
+            }  
+        }
+        .button {
+            margin: 0 auto;
+            width: 150px;
         }
     }
 }
